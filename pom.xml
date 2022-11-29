@@ -72,7 +72,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <cucumber.version>6.8.0</cucumber.version>
         <!-- Replace with your own URL of the Web Product to automate -->
-        <web.url>https://underc0de.org/</web.url>
+        <web.url>https://demoqa.com/automation-practice-form</web.url>
         <!-- Replace with your environment                            -->
         <web.environment>Environment</web.environment>
         <runner>testing.xml</runner>

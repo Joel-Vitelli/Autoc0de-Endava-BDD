@@ -1,6 +1,7 @@
 package com.autoc0de.steps;
 
 import com.autoc0de.pages.ExamplePage;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 
 public class ExampleSteps {
@@ -10,29 +11,24 @@ public class ExampleSteps {
 
     ExamplePage examplePage = new ExamplePage();
 
-    @Given("the user is on the home screen of Underc0de.org")
-    public void theUserIsOnTheHomeScreenOfUndercDeOrg() {
+
+    @Given("the user is on the home screen of ToolsQA")
+    public void theUserIsOnTheHomeScreenOfToolsQA() {
         examplePage.navigateToMainURL();
-        examplePage.verifyHomeTitle();
     }
 
-    @And("^the user click the \"(.*)\" button$")
-    public void theUserClickTheButton(String button) {
-        examplePage.clickButtonSwitch(button);
+    @When("the user completes the data")
+    public void theUserCompletesTheData(DataTable listData) {
+        examplePage.loadData(listData);
     }
 
-    @And("^the user click the \"INGRESAR\" button of the forum$")
-    public void theUserClickTheINGRESARButtonOfTheForum() {
-        examplePage.clickIngresarButtonForum();
+    @And("the user clicks the \"Submit\" button")
+    public void theUserClicksTheButton() {
+        examplePage.clickSumbitBtn();
     }
 
-    @And("^the user complete te user information. Usuario: \"(.*)\" Contraseña: \"(.*)\"$")
-    public void theUserCompleteTeUserInformationUsuarioUserContraseñaPass(String user, String pass) {
-        examplePage.completeLoginData(user, pass);
-    }
-
-    @Then("the user verifies that they are logged in.")
-    public void theUserVerifiesThatTheyAreLoggedIn() {
-        examplePage.verifyLogin();
+    @Then("^the user verifies that the message (.*) appears$")
+    public void theUserVerifiesThatTheMessageAppears(String messaje) {
+        examplePage.verifyMessaje(messaje);
     }
 }

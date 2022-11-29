@@ -5,11 +5,21 @@ import com.core.utility.PropertyFileReader;
 public class ExampleLocators {
 
     public static final String BASE_URL = PropertyFileReader.getProperty("url");
-    public static final String HOME_TITLE_XPATH = "xpath://*[@id=\"top\"]/section[1]/div/div/div/div/h2";
-    public static final String FORO_BUTTON_XPATH = "xpath://*[@id=\"materialize-menu\"]/ul/li[2]/a";
-    public static final String INGRESAR_BUTTONS_XPATH = "xpath://*[@id=\"button_login\"]/a";
-    public static final String INGRESAR_LOGIN_BUTTONS_XPATH = "xpath://*[@id=\"frmLogin\"]/div/div[2]/p[1]/input";
-    public static final String USUARIO_INPUT_XPATH = "xpath://*[@id=\"frmLogin\"]/div/div[2]/dl[1]/dd[1]/input";
-    public static final String PASS_INPUT_XPATH = "xpath://*[@id=\"frmLogin\"]/div/div[2]/dl[1]/dd[2]/input";
-    public static final String USER_LOGIN_LBL_XPATH = "xpath://*[@id=\"navbarDropdown\"]/span";
+    public static final String FIRST_NAME_ID = "id:firstName";
+    public static final String LAST_NAME_ID = "id:lastName";
+    public static final String EMAIL_NAME_ID = "id:userEmail";
+    public static final String MALE_GENDER_RADIO_ID = "xpath://input[@id='gender-radio-1']";
+    public static final String FEMALE_GENDER_RADIO_ID = "xpath://input[@id='gender-radio-1']";
+    public static final String MOBILE_ID = "id:userNumber";
+    public static final String SPORT_HOBBIE_CHECK_ID = "id:hobbies-checkbox-1";
+    public static final String MUSIC_HOBBIE_CHECK_ID = "id:hobbies-checkbox-3";
+    public static final String UPLOAD_PIC_ID = "id:uploadPicture";
+    public static final String CURRENT_ADRESS_ID = "id:currentAddress";
+    public static final String STATE_DROPBOX_XPATH = "xpath:(//div[@class=' css-1hwfws3'])[1]";
+    public static final String CITY_DROPBOX_XPATH = "xpath:(//div[@class=' css-1hwfws3'])[2]";
+    public static final String LIST_STATE_ITEM_XPATH = "xpath://div[contains(@id,'react-select-3-option')]";
+    public static final String LIST_CITY_ITEM_XPATH = "xpath://div[contains(@id,'react-select-4-option')]";
+    public static final String BTN_SUBMIT_ID = "id:submit";
+    public static final String H4_SUBMIT_ID = "xpath://div[@class='modal-title h4']";
+
 }
